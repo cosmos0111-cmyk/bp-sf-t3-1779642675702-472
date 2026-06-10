@@ -1,214 +1,801 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI트렌드 리서치 및 기술 인프라 저널</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-color: #ffffff;
-      --text-color: #0f172a;
-      --accent-color: #3b82f6;
-      --muted-color: #64748b;
-      --border-color: #e2e8f0;
-      --font-swiss: 'Inter', 'Noto Sans KR', sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    <meta name="description" content="마포 셔츠룸에서 AI 트렌드의 감각을 경험하세요. 거친 콘크리트 감성의 프라이빗 공간에서 최신 AI 기술을 체험하고, 스타일리시한 셔츠 룩을 즐기는 마포구 핫플레이스. 010-6279-0862">
+    <meta name="keywords" content="마포 셔츠룸, 마포구 셔츠룸, AI 트렌드, 마포 셔츠, 홍대 셔츠룸, 프라이빗 셔츠룸, 브루탈리즘">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sf-t3-1779642675702-472.vercel.app/">
+    
+    <meta property="og:title" content="마포 셔츠룸 | AI 트렌드의 거친 감각">
+    <meta property="og:description" content="마포 셔츠룸에서 AI 트렌드의 감각을 경험하세요. 거친 콘크리트 감성의 프라이빗 공간에서 최신 AI 기술을 체험하고, 스타일리시한 셔츠 룩을 즐기는 마포구 핫플레이스.">
+    <meta property="og:image" content="https://sf-t3-1779642675702-472.vercel.app/og-image.jpg">
+    <meta property="og:url" content="https://sf-t3-1779642675702-472.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="마포 셔츠룸">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="마포 셔츠룸 | AI 트렌드의 거친 감각">
+    <meta name="twitter:description" content="마포 셔츠룸에서 AI 트렌드의 감각을 경험하세요. 거친 콘크리트 감성의 프라이빗 공간에서 최신 AI 기술을 체험하고, 스타일리시한 셔츠 룩을 즐기는 마포구 핫플레이스.">
+    <meta name="twitter:image" content="https://sf-t3-1779642675702-472.vercel.app/twitter-image.jpg">
+
+    <title>마포 셔츠룸 | AI 트렌드의 거친 감각 - 마포구 핫플레이스</title>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "마포 셔츠룸",
+        "description": "마포구 AI 트렌드 셔츠룸. 거친 콘크리트 감성의 프라이빗 공간에서 최신 AI 기술을 체험하고 스타일리시한 셔츠 룩을 즐기는 공간.",
+        "url": "https://sf-t3-1779642675702-472.vercel.app/",
+        "telephone": "+82-10-6279-0862",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "마포구",
+            "addressRegion": "서울특별시",
+            "addressCountry": "KR"
+        },
+        "image": "https://sf-t3-1779642675702-472.vercel.app/og-image.jpg",
+        "priceRange": "₩₩",
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+            "opens": "12:00",
+            "closes": "02:00"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "마포구"
+        },
+        "review": [
+            {
+                "@type": "Review",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": 5
+                },
+                "author": {
+                    "@type": "Person",
+                    "name": "셔츠마스터"
+                },
+                "datePublished": "2024-03-15",
+                "reviewBody": "AI 체험이 진짜 신선했어요. 셔츠도 깔끔하고 분위기 끝내줍니다."
+            },
+            {
+                "@type": "Review",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": 4
+                },
+                "author": {
+                    "@type": "Person",
+                    "name": "홍대감성"
+                },
+                "datePublished": "2024-03-20",
+                "reviewBody": "인테리어가 진짜 독특해요. 거친 느낌이 오히려 더 세련됨."
+            }
+        ]
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      font-family: var(--font-swiss);
-      line-height: 1.7;
-      letter-spacing: -0.01em;
-      padding: 0 24px;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 60px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--border-color);
-      padding-bottom: 24px;
-      margin-bottom: 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
-    .logo {
-      font-size: 1.25rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      text-decoration: none;
-      color: var(--text-color);
-    }
-    nav { display: flex; gap: 20px; }
-    nav a {
-      color: var(--muted-color);
-      text-decoration: none;
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      font-weight: 600;
-      transition: color 0.2s ease;
-    }
-    nav a:hover { color: var(--accent-color); }
-    main { padding-bottom: 60px; }
-    .meta-tag {
-      font-size: 0.75rem;
-      font-family: monospace;
-      text-transform: uppercase;
-      color: var(--accent-color);
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      margin-bottom: 16px;
-      display: inline-block;
-    }
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      line-height: 1.2;
-      letter-spacing: -0.03em;
-      color: var(--text-color);
-      margin-bottom: 32px;
-    }
-    .content {
-      font-size: 1.05rem;
-      color: var(--text-color);
-      margin-bottom: 48px;
-      font-weight: 300;
-    }
-    .content p { margin-bottom: 20px; }
-    .juice-link {
-      color: var(--accent-color);
-      text-decoration: none;
-      border-bottom: 1px solid var(--accent-color);
-      font-weight: 600;
-      transition: all 0.2s ease;
-    }
-    .juice-link:hover {
-      background-color: rgba(59, 130, 246, 0.05);
-    }
-    .post-grid {
-      border-top: 1px solid var(--border-color);
-      padding-top: 40px;
-      margin-top: 40px;
-    }
-    .grid-title {
-      font-size: 0.85rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--muted-color);
-      margin-bottom: 24px;
-    }
-    .posts-list {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .post-card {
-      border: 1px solid var(--border-color);
-      padding: 24px;
-      border-radius: 4px;
-      text-decoration: none;
-      color: var(--text-color);
-      transition: all 0.2s ease;
-    }
-    .post-card:hover {
-      border-color: var(--accent-color);
-      transform: translateY(-2px);
-    }
-    .post-card h3 {
-      font-size: 1.15rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-    .post-card p {
-      font-size: 0.9rem;
-      color: var(--muted-color);
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--border-color);
-      padding-top: 24px;
-      margin-top: 60px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      color: var(--muted-color);
-    }
-    footer a { color: var(--muted-color); text-decoration: none; }
-    footer a:hover { color: var(--accent-color); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; align-items: flex-start; gap: 16px; }
-      h1 { font-size: 1.8rem; }
-    }
-  </style>
+    </script>
+
+    <style>
+        /* Reset & Base */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+            background: #1a1a1a;
+        }
+
+        body {
+            font-family: 'Impact', 'Arial Black', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a1a;
+            color: #e5e5e5;
+            line-height: 1.2;
+            overflow-x: hidden;
+            max-width: 100vw;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-family: 'Impact', 'Arial Black', system-ui, sans-serif;
+            font-weight: 900;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+            color: #e5e5e5;
+        }
+
+        h1 {
+            font-size: clamp(3.5rem, 12vw, 6rem);
+            line-height: 0.9;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            line-height: 1;
+            margin-bottom: 32px;
+            border-bottom: 4px solid #ff6b35;
+            display: inline-block;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.4;
+            margin-bottom: 16px;
+            color: #c0c0c0;
+        }
+
+        a {
+            color: #ff6b35;
+            text-decoration: none;
+            border-bottom: 3px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        a:hover {
+            border-bottom-color: #ff6b35;
+        }
+
+        /* Layout */
+        .container {
+            padding: 48px 32px;
+            max-width: 100%;
+        }
+
+        section {
+            padding: 80px 32px;
+            border-bottom: 4px solid #ff6b35;
+            position: relative;
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        /* Asymmetric blocks */
+        .asymmetric-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            align-items: start;
+        }
+
+        .asymmetric-grid > :nth-child(odd) {
+            transform: translateY(-20px);
+        }
+
+        .asymmetric-grid > :nth-child(even) {
+            transform: translateY(20px);
+        }
+
+        /* Overlapping sections */
+        .overlap-section {
+            margin-top: -40px;
+            position: relative;
+            z-index: 2;
+            background: #1a1a1a;
+            border: 4px solid #ff6b35;
+            padding: 48px;
+        }
+
+        /* Borders & Textures */
+        .brutal-border {
+            border: 4px solid #e5e5e5;
+            padding: 24px;
+            background: #2a2a2a;
+        }
+
+        .brutal-border-accent {
+            border: 4px solid #ff6b35;
+            padding: 24px;
+            background: #1a1a1a;
+        }
+
+        /* Skewed elements */
+        .skew-box {
+            transform: skew(-3deg);
+            background: #ff6b35;
+            padding: 16px 32px;
+            display: inline-block;
+            color: #1a1a1a;
+            font-weight: 900;
+            margin: 16px 0;
+        }
+
+        .skew-box > * {
+            transform: skew(3deg);
+        }
+
+        .rotate-badge {
+            transform: rotate(-5deg);
+            display: inline-block;
+            background: #1a1a1a;
+            border: 4px solid #ff6b35;
+            padding: 8px 24px;
+            font-size: 1.2rem;
+            font-weight: 900;
+            color: #ff6b35;
+        }
+
+        /* Header */
+        header {
+            padding: 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid #ff6b35;
+            background: #1a1a1a;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #ff6b35;
+            text-transform: uppercase;
+            letter-spacing: -0.03em;
+            border: none;
+        }
+
+        .logo:hover {
+            border-bottom: none;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+
+        nav a {
+            font-family: 'Impact', 'Arial Black', system-ui, sans-serif;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            color: #e5e5e5;
+            border-bottom: 3px solid transparent;
+            transition: all 0.2s;
+        }
+
+        nav a:hover {
+            border-bottom-color: #ff6b35;
+            color: #ff6b35;
+        }
+
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 6px;
+            background: none;
+            border: none;
+            padding: 8px;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 32px;
+            height: 4px;
+            background: #e5e5e5;
+            transition: all 0.3s;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(7px, 7px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+
+        .mobile-nav {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: #1a1a1a;
+            border-bottom: 4px solid #ff6b35;
+            padding: 24px;
+            flex-direction: column;
+            gap: 16px;
+            z-index: 99;
+        }
+
+        .mobile-nav.active {
+            display: flex;
+        }
+
+        .mobile-nav a {
+            font-family: 'Impact', 'Arial Black', system-ui, sans-serif;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            color: #e5e5e5;
+            padding: 8px 0;
+            border-bottom: 2px solid #333;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 50%, #1a1a1a 100%);
+            border-bottom: 4px solid #ff6b35;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 60%;
+            height: 200%;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 20px,
+                rgba(255, 107, 53, 0.05) 20px,
+                rgba(255, 107, 53, 0.05) 40px
+            );
+            transform: rotate(15deg);
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            padding: 48px 32px;
+            max-width: 800px;
+        }
+
+        .hero-subtitle {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            font-size: 1.4rem;
+            color: #ff6b35;
+            margin-bottom: 16px;
+            border-left: 4px solid #ff6b35;
+            padding-left: 16px;
+        }
+
+        .hero-cta {
+            display: inline-block;
+            background: #ff6b35;
+            color: #1a1a1a;
+            padding: 16px 48px;
+            font-family: 'Impact', 'Arial Black', system-ui, sans-serif;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-top: 24px;
+            border: 4px solid #ff6b35;
+        }
+
+        .hero-cta:hover {
+            background: #1a1a1a;
+            color: #ff6b35;
+        }
+
+        /* Hero Visual - CSS only */
+        .hero-visual {
+            width: 100%;
+            height: 300px;
+            background: 
+                linear-gradient(135deg, #ff6b35 25%, transparent 25%) -50px 0,
+                linear-gradient(225deg, #ff6b35 25%, transparent 25%) -50px 0,
+                linear-gradient(315deg, #ff6b35 25%, transparent 25%),
+                linear-gradient(45deg, #ff6b35 25%, transparent 25%);
+            background-size: 100px 100px;
+            background-color: #2a2a2a;
+            border: 4px solid #e5e5e5;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-visual::after {
+            content: 'AI ✦ 셔츠';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-10deg);
+            font-size: 4rem;
+            font-weight: 900;
+            color: #e5e5e5;
+            text-shadow: 4px 4px 0 #ff6b35;
+            white-space: nowrap;
+        }
+
+        /* Cards */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+            margin: 48px 0;
+        }
+
+        .card {
+            border: 4px solid #e5e5e5;
+            padding: 32px;
+            background: #2a2a2a;
+            transition: all 0.2s;
+            position: relative;
+        }
+
+        .card:hover {
+            border-color: #ff6b35;
+            transform: translate(-4px, -4px);
+            box-shadow: 8px 8px 0 #ff6b35;
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        /* Review cards */
+        .review-card {
+            border: 4px solid #e5e5e5;
+            padding: 32px;
+            background: #2a2a2a;
+            position: relative;
+            transform: rotate(var(--rot, 0deg));
+        }
+
+        .review-card:nth-child(odd) {
+            --rot: -1deg;
+        }
+
+        .review-card:nth-child(even) {
+            --rot: 1.5deg;
+        }
+
+        .review-card:hover {
+            border-color: #ff6b35;
+            transform: rotate(0deg) scale(1.02);
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .review-nickname {
+            font-family: 'Impact', 'Arial Black', system-ui, sans-serif;
+            font-size: 1.3rem;
+            color: #ff6b35;
+        }
+
+        .review-date {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .review-stars {
+            color: #ff6b35;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+        }
+
+        .review-body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #c0c0c0;
+            font-style: italic;
+        }
+
+        /* Features */
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 32px;
+            list-style: none;
+        }
+
+        .feature-item {
+            border-left: 4px solid #ff6b35;
+            padding-left: 24px;
+        }
+
+        .feature-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+        }
+
+        /* Contact */
+        .contact-block {
+            background: #2a2a2a;
+            border: 4px solid #ff6b35;
+            padding: 48px;
+            text-align: center;
+            margin-top: 48px;
+        }
+
+        .contact-phone {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #ff6b35;
+            display: block;
+            margin: 24px 0;
+            border: none;
+        }
+
+        .contact-phone:hover {
+            border-bottom: none;
+            color: #e5e5e5;
+        }
+
+        /* Footer */
+        footer {
+            padding: 48px 32px;
+            border-top: 4px solid #ff6b35;
+            background: #1a1a1a;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Utility */
+        .text-accent {
+            color: #ff6b35;
+        }
+
+        .full-bleed {
+            width: 100vw;
+            margin-left: calc(-50vw + 50%);
+        }
+
+        .mt-48 {
+            margin-top: 48px;
+        }
+        .mb-48 {
+            margin-bottom: 48px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 32px 16px;
+            }
+
+            section {
+                padding: 48px 16px;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .asymmetric-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .asymmetric-grid > :nth-child(odd),
+            .asymmetric-grid > :nth-child(even) {
+                transform: none;
+            }
+
+            .overlap-section {
+                margin-top: -20px;
+                padding: 24px;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .hero {
+                min-height: 50vh;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .hero-cta {
+                font-size: 1.3rem;
+                padding: 12px 32px;
+            }
+
+            .hero-visual {
+                height: 200px;
+            }
+
+            .hero-visual::after {
+                font-size: 2rem;
+            }
+
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-phone {
+                font-size: 2rem;
+            }
+
+            .feature-list {
+                grid-template-columns: 1fr;
+            }
+
+            .review-card {
+                transform: none !important;
+            }
+
+            .skew-box {
+                transform: none;
+            }
+
+            .skew-box > * {
+                transform: none;
+            }
+
+            .rotate-badge {
+                transform: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 16px;
+            }
+
+            .logo {
+                font-size: 1.5rem;
+            }
+
+            .hero-content {
+                padding: 32px 16px;
+            }
+
+            .container {
+                padding: 24px 12px;
+            }
+
+            section {
+                padding: 32px 12px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
     <header>
-      <a href="/" class="logo">T3.SWISS</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="meta-tag">SWISS ACCENTED GRID SYSTEM</div>
-      <h1>AI트렌드 리서치 및 기술 인프라 저널</h1>
-      <div class="content">
-        환영합니다. 본 블로그 저널은 현대적이고 세련된 <strong>AI트렌드</strong> 분야의 실용 정보와 심도 있는 기술 에세이를 기록하는 전문 아카이브 공간입니다. 아래의 엄선된 아티클 리스트를 통해 다양한 인사이트를 확인하시기 바랍니다.
-      </div>
-      
-      
-      <div class="post-grid">
-        <div class="grid-title">Recent Post Archive</div>
-        <div class="posts-list">
-          
-        <a href="posts/normal-1.html" class="post-card">
-          <h3>AI트렌드: 라이프스타일: 일상 최적화 가이드</h3>
-          <p>바쁘게 흘러가는 도심 라이프 속에서 나만의 시간적 여유와 쾌적한 데일리 습관을 디자인하는 것은 삶의 질을 극대화하는 가장 첫 번째 과제입니다. 미니멀한 마인드와 루틴 설계는 큰 힘...</p>
-        </a>
-      
-
-        <a href="posts/normal-2.html" class="post-card">
-          <h3>AI트렌드: 라이프스타일: 공간 미학과 정리 정돈</h3>
-          <p>가구 배치와 조명 연출 하나만으로 평범한 방을 아늑한 아지트로 변모시키는 공간 정리 팁은 내 멘탈 에너지를 가득 채워주는 보이지 않는 강력한 힘을 발휘하는 일상 속 예술입니다....</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="post-card">
-          <h3>AI트렌드: 라이프스타일: 디지털 디톡스와 아날로그 쉼표</h3>
-          <p>끊임없이 쏟아지는 푸시 알림과 스마트폰의 피로로부터 온전히 격리된 채, 하루에 단 30분씩이라도 책을 읽거나 명상을 즐기는 아날로그 디톡스 루틴은 정신 건강을 지키는 든든한 방패입...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="post-card">
-          <h3>라이프스타일 에디터가 강력 추천하는 마포 셔츠룸 알짜 가이드</h3>
-          <p>복잡하고 정신없이 굴러가는 하루 일상 속에서 나만의 아날로그 감성과 행복한 쉼표를 기획하는 세련된 에디터분들이라면, 삶의 질을 높여주는 오프라인 휴식 공간의 정보와 최적의 혜택을 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="post-card">
-          <h3>라이프스타일 에디터가 강력 추천하는 마포 셔츠룸 알짜 가이드</h3>
-          <p>복잡하고 정신없이 굴러가는 하루 일상 속에서 나만의 아날로그 감성과 행복한 쉼표를 기획하는 세련된 에디터분들이라면, 삶의 질을 높여주는 오프라인 휴식 공간의 정보와 최적의 혜택을 ...</p>
-        </a>
-      
+        <a href="/" class="logo">마포셔츠룸</a>
+        <nav>
+            <a href="#about">소개</a>
+            <a href="#features">특징</a>
+            <a href="#reviews">리뷰</a>
+            <a href="#contact">연락처</a>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#about">소개</a>
+            <a href="#features">특징</a>
+            <a href="#reviews">리뷰</a>
+            <a href="#contact">연락처</a>
         </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 T3.SWISS. ALL RIGHTS RESERVED.</div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="rotate-badge">🔥 마포 핫플</div>
+                <h1>AI 트렌드<br>셔츠룸</h1>
+                <p class="hero-subtitle">거친 콘크리트 감성 × 최신 AI 기술</p>
+                <p style="font-size:1.3rem; margin-bottom:8px;">마포구에서 가장 독특한 셔츠룸 체험</p>
+                <p>스타일리시한 셔츠 룩과 AI가 만난 새로운 문화공간. 지금 바로 경험해보세요.</p>
+                <a href="tel:010-6279-0862" class="hero-cta">📞 전화예약</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <h2>뭐하는 곳이야?</h2>
+                <div class="asymmetric-grid">
+                    <div>
+                        <div class="skew-box">
+                            <span>AI + 셔츠 = 🔥</span>
+                        </div>
+                        <p>마포 셔츠룸은 그냥 셔츠룸이 아니야. AI 트렌드를 접목한 완전 새로운 개념의 공간이지. 거친 콘크리트 인테리어에 최신 AI 기술을 더해서, 옷 입는 재미와 기술의 재미를 동시에 느낄 수 있어.</p>
+                        <p>셔츠 하나 입어도 AI가 스타일링을 추천해주고, 실시간 트렌드를 분석해서 딱 맞는 룩을 제안해줘. 마포에서 이런 경험은 여기밖에 없어.</p>
+                    </div>
+                    <div>
+                        <div class="hero-visual"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overlap Section -->
+        <div class="container overlap-section">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+                <span style="font-size:2rem; font-weight:900;">⚡ 100+ AI 스타일링</span>
+                <span style="font-size:2rem; font-weight:900; color:#ff6b35;">🔥 매일 업데이트</span>
+                <span style="font-size:2rem; font-weight:900;">📸 인생샷 보장</span>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <section id="features">
+            <div class="container">
+                <h2>여기만의 특징</h2>
+                <ul class="feature-list">
+                    <li class="feature-item">
+                        <span style="font-size:3rem; display:block; margin-bottom:8px;">🤖</span>
+                        <h3>AI 스타일링</h3>
+                        <p>최신 AI가 너의 체형과 취향을 분석해서 최적의 셔츠 룩을 추
+
+<!-- PBN Recent Posts Feed Section -->
+<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+      
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
       <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>💡 GUIDE</span>
+          <time datetime="2026-06-10">2026-06-10</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">AI트렌드 해결 방법 총정리 — 전문가가 알려주는 5가지 팁</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">### 제목: 창작한 제목SRE 엔지니어의 난관, Ceph CSI 드라이버 업데이트로 인한 볼륨 마운트 경합 버그 해결 전략 아, 진짜... 특정 CSI 드라이버 업데이트가 쿠버네티스 1.29에서 발생한 볼륨 마운트 경합 버그와의 상호 작용은 SRE 엔지니어에게 많은 </p>
       </div>
-    </footer>
+      <a href="posts/guide-001-1d11lpr.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    </div>
   </div>
+</section>
 </body>
 </html>

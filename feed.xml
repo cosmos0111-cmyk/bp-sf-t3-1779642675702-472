@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title><![CDATA[AI트렌드]]></title>
+  <link>https://cosmos0111-cmyk.github.io/bp-sf-t3-1779642675702-472</link>
+  <description><![CDATA[AI트렌드 - 마포 셔츠룸 관련 최신 소식 및 가이드]]></description>
+  <language>ko</language>
+  <pubDate>Wed, 10 Jun 2026 20:11:00 GMT</pubDate>
+  <lastBuildDate>Wed, 10 Jun 2026 20:11:00 GMT</lastBuildDate>
+  <atom:link href="https://cosmos0111-cmyk.github.io/bp-sf-t3-1779642675702-472/feed.xml" rel="self" type="application/rss+xml" />
+  
+    <item>
+      <title><![CDATA[AI트렌드 해결 방법 총정리 — 전문가가 알려주는 5가지 팁]]></title>
+      <link>https://cosmos0111-cmyk.github.io/bp-sf-t3-1779642675702-472/posts/guide-001-1d11lpr.html</link>
+      <guid isPermaLink="true">https://cosmos0111-cmyk.github.io/bp-sf-t3-1779642675702-472/posts/guide-001-1d11lpr.html</guid>
+      <description><![CDATA[### 제목: 창작한 제목SRE 엔지니어의 난관, Ceph CSI 드라이버 업데이트로 인한 볼륨 마운트 경합 버그 해결 전략 아, 진짜... 특정 CSI 드라이버 업데이트가 쿠버네티스 1.29에서 발생한 볼륨 마운트 경합 버그와의 상호 작용은 SRE 엔지니어에게 많은 ]]></description>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+</channel>
+</rss>

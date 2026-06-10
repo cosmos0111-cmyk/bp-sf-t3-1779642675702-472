@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    <meta name="description" content="마포 셔츠룸 브루탈리즘 감성 블로그. AI 트렌드와 셔츠 룩의 만남, 실제 방문 후기와 꿀팁 대방출. 010-6279-0862">
+    <meta name="keywords" content="마포 셔츠룸, 마포구 셔츠룸, AI 트렌드, 마포 셔츠, 홍대 셔츠룸, 프라이빗 셔츠룸, 브루탈리즘, 블로그, 후기">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sf-t3-1779642675702-472.vercel.app/blog">
+    <meta property="og:title" content="마포 셔츠룸 | AI 트렌드 블로그 - 진짜 후기">
+    <meta property="og:description" content="거친 콘크리트 감성의 마포 셔츠룸, AI 트렌드 체험 솔직 후기. 형들이 알려주는 꿀팁 대방출">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sf-t3-1779642675702-472.vercel.app/blog">
+    <meta property="og:image" content="https://sf-t3-1779642675702-472.vercel.app/og-image.jpg">
+    <title>마포 셔츠룸 | AI 트렌드 블로그 - 진짜 후기</title>
+    <style>
+        /* Reset & Base */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        body {
+            font-family: 'Arial Black', 'Helvetica Neue', Arial, sans-serif;
+            background: #1a1a1a;
+            color: #e0e0e0;
+            line-height: 1.6;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 2px,
+                rgba(255,255,255,0.02) 2px,
+                rgba(255,255,255,0.02) 4px
+            );
+            pointer-events: none;
+            z-index: 9999;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #f5f5f5;
+        }
+        h1 {
+            font-size: 3.5rem;
+            line-height: 1;
+            margin-bottom: 1.5rem;
+            text-shadow: 4px 4px 0 #ff3366, 8px 8px 0 rgba(0,0,0,0.5);
+            -webkit-text-stroke: 1px #333;
+        }
+        h2 {
+            font-size: 2.2rem;
+            border-left: 8px solid #ff3366;
+            padding-left: 1rem;
+            margin: 2.5rem 0 1.5rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            color: #ff3366;
+        }
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1.1rem;
+        }
+        a {
+            color: #ff3366;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        a:hover {
+            border-bottom-color: #ff3366;
+            color: #ff6699;
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+        }
+        section {
+            padding: 4rem 0;
+            border-bottom: 2px solid #333;
+            position: relative;
+        }
+        section:last-of-type {
+            border-bottom: none;
+        }
+        section::after {
+            content: '✧';
+            position: absolute;
+            bottom: -1rem;
+            right: 2rem;
+            font-size: 2rem;
+            color: #ff3366;
+            opacity: 0.3;
+        }
+
+        /* Asymmetric blocks */
+        .asymmetric-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr 1fr;
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .asymmetric-grid > *:nth-child(2) {
+            transform: translateY(-2rem);
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(26,26,26,0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 3px solid #ff3366;
+            z-index: 1000;
+            padding: 0.8rem 0;
+        }
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-brand {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #f5f5f5;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 0 #ff3366;
+        }
+        .nav-brand:hover {
+            border-bottom: none;
+            color: #ff3366;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            align-items: center;
+        }
+        .nav-links a {
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            padding: 0.5rem 0;
+            position: relative;
+        }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #ff3366;
+            transition: width 0.3s ease;
+        }
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        .tel-link {
+            background: #ff3366;
+            color: #1a1a1a !important;
+            padding: 0.5rem 1.5rem !important;
+            border-radius: 0;
+            font-weight: 900;
+            border: 2px solid #ff3366;
+            transition: all 0.3s ease;
+        }
+        .tel-link:hover {
+            background: transparent;
+            color: #ff3366 !important;
+            border-color: #ff3366;
+        }
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            padding: 5px;
+        }
+        .hamburger-menu span {
+            width: 30px;
+            height: 3px;
+            background: #f5f5f5;
+            transition: all 0.3s ease;
+        }
+
+        /* Blog specific */
+        .blog-hero {
+            margin-top: 5rem;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .blog-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 60%;
+            height: 200%;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 20px,
+                rgba(255,51,102,0.05) 20px,
+                rgba(255,51,102,0.05) 40px
+            );
+            transform: rotate(15deg);
+        }
+        .blog-hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+        }
+        .blog-meta {
+            font-size: 0.9rem;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            display: flex;
+            gap: 1.5rem;
+        }
+        .blog-meta span {
+            position: relative;
+        }
+        .blog-meta span::after {
+            content: '|';
+            margin-left: 1.5rem;
+            color: #ff3366;
+        }
+        .blog-meta span:last-child::after {
+            display: none;
+        }
+        .blog-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: rgba(255,51,102,0.1);
+            border-left: 4px solid #ff3366;
+        }
+        .blog-author-avatar {
+            width: 60px;
+            height: 60px;
+            background: #ff3366;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 900;
+            color: #1a1a1a;
+        }
+        .blog-content {
+            font-size: 1.15rem;
+            line-height: 1.8;
+        }
+        .blog-content blockquote {
+            margin: 2rem 0;
+            padding: 2rem;
+            background: rgba(255,51,102,0.05);
+            border-left: 4px solid #ff3366;
+            font-style: italic;
+            font-size: 1.3rem;
+            position: relative;
+        }
+        .blog-content blockquote::before {
+            content: '"';
+            font-size: 4rem;
+            color: #ff3366;
+            position: absolute;
+            top: -1rem;
+            left: 1rem;
+            opacity: 0.3;
+        }
+        .blog-content ul, .blog-content ol {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+        }
+        .blog-content li {
+            margin-bottom: 0.8rem;
+        }
+        .blog-highlight-box {
+            background: linear-gradient(135deg, rgba(255,51,102,0.1), rgba(255,51,102,0.05));
+            padding: 2rem;
+            margin: 2rem 0;
+            border: 2px solid #ff3366;
+            position: relative;
+        }
+        .blog-highlight-box::before {
+            content: '★';
+            position: absolute;
+            top: -1rem;
+            left: -1rem;
+            font-size: 2rem;
+            color: #ff3366;
+        }
+        .blog-highlight-box h3 {
+            margin-top: 0;
+        }
+        .blog-footer-cta {
+            text-align: center;
+            padding: 4rem 0;
+            margin-top: 3rem;
+            border-top: 2px solid #333;
+        }
+        .blog-footer-cta .cta-button {
+            display: inline-block;
+            background: #ff3366;
+            color: #1a1a1a;
+            padding: 1.2rem 3rem;
+            font-size: 1.3rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border: 3px solid #ff3366;
+            transition: all 0.3s ease;
+            margin-top: 1.5rem;
+        }
+        .blog-footer-cta .cta-button:hover {
+            background: transparent;
+            color: #ff3366;
+            border-color: #ff3366;
+        }
+
+        /* Footer */
+        footer {
+            background: #111;
+            padding: 3rem 0;
+            text-align: center;
+            border-top: 3px solid #ff3366;
+        }
+        footer p {
+            font-size: 0.9rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Responsive 768 */
+        @media (max-width: 768px) {
+            html {
+                font-size: 14px;
+            }
+            .hamburger-menu {
+                display: flex;
+            }
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: rgba(26,26,26,0.98);
+                flex-direction: column;
+                padding: 2rem;
+                gap: 1.5rem;
+                border-bottom: 3px solid #ff3366;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .asymmetric-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            .asymmetric-grid > *:nth-child(2) {
+                transform: none;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+            h2 {
+                font-size: 1.8rem;
+            }
+            .blog-hero {
+                min-height: 40vh;
+            }
+            .blog-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            .blog-meta span::after {
+                display: none;
+            }
+            .blog-author {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="nav-brand">마포 셔츠룸</a>
+            <div class="hamburger-menu" onclick="this.classList.toggle('active'); document.querySelector('.nav-links').classList.toggle('active')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">홈</a></li>
+                <li><a href="/about">소개</a></li>
+                <li><a href="/service">서비스</a></li>
+                <li><a href="/gallery">갤러리</a></li>
+                <li><a href="/blog">블로그</a></li>
+                <li><a href="/contact">문의</a></li>
+                <li><a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Blog Hero Section -->
+    <section class="blog-hero">
+        <div class="container">
+            <div class="blog-hero-content">
+                <div class="blog-meta">
+                    <span>2025.03.25</span>
+                    <span>AI 트렌드</span>
+                    <span>5분 읽기</span>
+                </div>
+                <h1>마포 셔츠룸에서 AI 트렌드 체험한 썰</h1>
+                <p style="font-size:1.3rem; color:#ff3366; font-weight:700;">거친 콘크리트 감성 속에서 만난 미래, 형들이 말해주는 진짜 후기</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Content Section -->
+    <section>
+        <div class="container">
+            <div class="blog-author">
+                <div class="blog-author-avatar">형</div>
+                <div>
+                    <p style="font-weight:900; margin-bottom:0.3rem;">마포 셔츠룸 단골 형</p>
+                    <p style="font-size:0.9rem; color:#888;">매주 토요일마다 들르는 AI 덕후 형. 셔츠 룩과 AI 트렌드의 조합에 빠짐</p>
+                </div>
+            </div>
+
+            <div class="blog-content">
+                <p>야, 형들! 오늘은 진짜 핫한 곳 다녀온 썰 풀어볼게. 마포 셔츠룸이라고 아냐? 홍대 근처에 있는 곳인데, 거기가 완전 미쳤어. AI 트렌드랑 셔츠 룩이 합쳐진 컨셉인데, 솔직히 처음엔 "뭐야 이게" 싶었거든. 근데 가보니까 완전 인정할 수밖에 없더라.</p>
+
+                <p>들어가자마자 느껴지는 그 브루탈리즘 감성. 콘크리트 벽에 거친 질감, 조명까지 셔츠 룩이랑 AI 이미지가 번갈아 나오는 거야. 분위기 자체가 완전 아방가르드 그 자체. 형은 원래 이런 스타일 좋아하는데, 여기는 진짜 레벨이 다르더라고.</p>
+
+                <blockquote>
+                    "AI가 생성한 이미지랑 실제 셔츠 룩이 만나는 순간, 그 감동은 말로 표현 못 해. 마치 브루탈리즘 건축 안에서 미래를 보는 기분이었어."
+                </blockquote>
+
+                <p>
+</body>
+</html>
