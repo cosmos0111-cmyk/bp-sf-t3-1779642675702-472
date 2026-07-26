@@ -33,7 +33,7 @@
 <p>##### 실패 원인 및 비교 기준<br>- **CVE 2023-0756**와 **CVE 2024-0890**의 볼륨 마운트 경합 문제를 비교했을 때, CVE 2023-0756은 CSI 드라이버 업데이트 후 즉시 발생하였으나, CVE 2024-0890는 CSI 드라이버 업데이트 이후 시간이 지나면서 볼륨 마운트 경합이 발생하였습니다.<br>- **CVE 2023-0756**와 **CVE 2024-0890**의 볼륨 관리 로직을 비교했을 때, CVE 2024-0890는 CSI 드라이버가 제공하는 메타데이터 처리 로직이 갑작스럽게 변경되었다는 점에서 CVE 2023-0756와 유사하였습니다.</p>
 <p>##### 결말<br>처음 장면을 다시 해석하면, 특정 CSI 드라이버 업데이트 후 볼륨 마운트 경합 문제가 발생하는 것은 SRE 엔지니어들이 직면한 또 다른 난관임을 알 수 있습니다. 이러한 문제를 해결하기 위해서는 CSI 드라이버의 업데이트 사항과 관련된 볼륨 관리 로직을 철저히 분석하고, 예상 가능한 문제 발생 시점을 미리 알고 조치하는 것이 중요합니다.</p>
 <p><IMAGE placement="hero" alt="OpenStack CSI 드라이버 업데이트 후 볼륨 마운트 경합 해결 방법"><br>cliffhanger, ceph-failure, docker-volume-driver, oom-reason, openstack-cinder, openstack-volume, csi-rs-error, k8s-volumes-conflict, sre-engineer</p>
-<p><a href="https://minaminami.dothome.co.kr/" target="_blank" rel="noopener noreferrer">마포 셔츠룸 예약 시 눈탱이 피하는 법</a></p>
+<p><a href="https://watchdog.pickdesk.online/" target="_blank" rel="noopener noreferrer">마포 셔츠룸 예약 시 눈탱이 피하는 법</a></p>
 
     <div class="juice-ref-9uyvpb" style="margin-top:2.5rem;padding:1rem 0;border-top:1px dashed #ccc;font-size:0.9rem;color:#666;">
       <p style="font-weight:600;margin-bottom:0.5rem;">함께 보면 좋은 정보</p>
